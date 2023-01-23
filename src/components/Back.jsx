@@ -7,7 +7,7 @@ function Back() {
     const navigate=useNavigate()
     
     const clickBack = () => {
-        navigate('/')
+        navigate('/portfolio')
     }
 
     return (

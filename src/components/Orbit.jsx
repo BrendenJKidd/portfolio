@@ -6,13 +6,13 @@ function Orbit() {
     const clickAbout = (e) => {
       if(e.target == e.currentTarget){
         e.stopPropagation()
-    navigate('/about')
+    navigate('/portfolio/about')
         }}
     const clickWorks = (e) => {
-    navigate('/works')
+    navigate('/portfolio/works')
         }
     const clickContact = () => {
-    navigate('/contact')
+    navigate('/portfolio/contact')
         }
 
     return (

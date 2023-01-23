@@ -7,10 +7,6 @@ function About() {
 
     const navigate=useNavigate()
 
-    const clickBack = () => {
-        navigate('/')
-    }
-
     return (
       <div className="About">
         <Back />

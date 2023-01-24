@@ -11276,7 +11276,7 @@ function Map() {
 
     return (
       <div className="map">
-        <div style={{width:'100%', height: '50vh'}}>
+        <div className="map-styles">
             <ComposableMap
                 width={900}
                 height={400}
@@ -11298,6 +11298,7 @@ function Map() {
                                             key={index}
                                             geography={geo}
                                             fill={isos ? '#2C5909' : "black"}
+                                            stroke={isos ? '#2C5909' : "black"}
                                             style={{
                                               default: { outline: "none" },
                                               hover: { outline: "none" },
@@ -11312,17 +11313,17 @@ function Map() {
                                                 stroke:"white",
                                                 strokeWidth: 1
                                             }}>
-                                            <text>Where I am</text>
+                                            <text style={{fill: "white"}}>Where I am</text>
                                         </Annotation>
                                         <Annotation
                                             subject={[138.2529, 36.2048]}
-                                            dx={70}
+                                            dx={-70}
                                             dy={-40}
                                             connectorProps={{
                                                 stroke:"white",
                                                 strokeWidth: 1
                                             }}>
-                                            <text>Where I'm going</text>
+                                            <text style={{fill: "white"}}>Where I'm going</text>
                                         </Annotation>
                                     </>
                                 )
@@ -11332,11 +11333,16 @@ function Map() {
                 </ZoomableGroup>
             </ComposableMap>
             <div className="legend">
-          <div className="have-been"></div>
-          <p>Where I've been</p>
-          <div className="have-not-been"></div>
-          <p>Where I haven't</p>
-        </div>
+              <div className="legend1">
+                <div className="have-been"></div>
+                <p>Where I've been</p>
+              </div>
+              <div className="legend2">
+                <div className="have-not-been"></div>
+                <p>Where I haven't</p>
+              </div>
+            </div>
+            <div className="tl_center"></div>
         </div>
       </div>
     );

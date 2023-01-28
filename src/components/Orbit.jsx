@@ -9,7 +9,7 @@ function Orbit() {
     navigate('/portfolio/about')
         }}
     const clickWorks = (e) => {
-    navigate('/portfolio/works')
+    navigate('/portfolio/projects')
         }
     const clickContact = () => {
     navigate('/portfolio/contact')
@@ -20,7 +20,7 @@ function Orbit() {
         <div class="planet">
             <h1>About</h1>
             <div class="planet-hover" onClick={ clickAbout }></div>
-            <div class="moon1"  onClick={ clickWorks }>Works</div>
+            <div class="moon1"  onClick={ clickWorks }>Projects</div>
             <div class="moon2"  onClick={ clickContact }>Contact</div>
         </div>
       </>

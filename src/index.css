@@ -138,8 +138,59 @@ code {
 }
 
 .tl_center {
-  border-left: 1vw solid white;
-  height: 200vh;
+  border-left: 5px solid white;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40vw;
+  margin-top: 2vw;
+}
+
+.tl_section {
+  background-color: white;
+  padding: 10px 25px;
+  font-size: 16px;
+  border: 1px slid #ccc;
+  line-height: 1.7;
+  position: relative;
+  width: fit-content;
+  min-width: 40vw;
+  margin-bottom: 20px;
+  color: black;
+  margin-left: 17px;
+  border-radius: 2%;
+}
+
+.tl_section:before {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: black;
+  border: 3px solid white;
+  position: absolute;
+  top: 10px;
+  left: -30px;
+}
+
+.tl_section:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent white transparent transparent;
+  border-width: 8px;
+  position: absolute;
+  left: -16px;
+  top: 10px;
+}
+
+.tl_img {
+  max-width: 10vw;
+  float: right;
+  margin-top: 10px;
 }
 
 .Works {
@@ -163,7 +214,7 @@ code {
 .sites {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
 }
 
 .site1 {
@@ -194,6 +245,7 @@ code {
   width: 40vw;
   color: white;
   margin: 20px;
+  background-color:rgba(0, 0, 0, 0.7)
 }
 
 .planet {

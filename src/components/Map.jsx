@@ -1,6 +1,12 @@
 import { useState, useEffect } from 'react'
 import { ComposableMap, Geographies, Geography, Annotation, ZoomableGroup, Sphere, Graticule } from 'react-simple-maps'
 import { scaleLinear } from 'd3-scale'
+import MSA from '../msa.jpg'
+import WR from '../WR.jpg'
+import amazon from '../amazon.png'
+import GU from '../GU.svg'
+import europe from '../europe.jpg'
+import plane from '../plane.jpg'
 
 const geoUrl = {
     "type": "Topology",
@@ -11342,7 +11348,43 @@ function Map() {
                 <p>Where I haven't</p>
               </div>
             </div>
-            <div className="tl_center"></div>
+            <div className="tl_center">
+              <div className="tl_section">
+                <img src={MSA} className="tl_img"></img>
+                <h3>Late High School</h3>
+                <h4>2017-2018</h4>
+                <p>I knew I wanted to do something with God and I wanted to go on adventures, so I decided becoming a missionary was the correct path for me. Not wanting to wait to start my life I worked extra hard to obtain the credits I needed to graduate a year early.</p>
+              </div>
+              <div className="tl_section">
+                <img src={WR} className="tl_img"></img>
+                <h3>The World Race</h3>
+                <h4>2018-2019</h4>
+                <p>Eventually I discovered a program that fit my needs called the World Race Gap Year. The program involved taking youth to four different countries in 9 months to do volunteer work and grow in their relationship with God. My route's countries were Ecuador, Peru, Guatemala, and Cambodia. It was on the World Race that I first decided I wanted to make Japan my home base.</p>
+              </div>
+              <div className="tl_section">
+                <img src={amazon} className="tl_img"></img>
+                <h3>Amazon</h3>
+                <h4>2019-2021</h4>
+                <p>After the race I returned to Florida in order to save up money and continue to grow my Japanese. I quickly got a job at Amazon and worked hard for almost two years. During this time I learned the value of hard work but I also learned that I needed proper mentorship and a way to support myself finanically overseas.</p>
+              </div>
+              <div className="tl_section">
+                <img src={GU} className="tl_img"></img>
+                <h3>Global U</h3>
+                <h4>2021-2022</h4>
+                <p>I once again discovered a 9 month long program that fit my needs. This program affiliated with the World Race takes a small class of students to 3 different countries and teaches programming and entreprenuership while providing mentorship and volunteer opportunities. I took well to programming and decided to make use of this as a source of income. The countries we visted were Nicaragua, Guatemala, and Montenegro.</p>
+              </div>
+              <div className="tl_section">
+                <img src={europe} className="tl_img"></img>
+                <h3>Europe Tour</h3>
+                <h4>2022</h4>
+                <p>Not wanting to return to Florida right away after the completion of Global U, I set out on my own with my savings to sight see and build my programming portfolio in the meantime. This ended up being a challenging time of immense personal growth, but also a time filled with experiences I'll never forget.</p>
+              </div>
+              <div className="tl_section">
+                <img src={plane} className="tl_img"></img>
+                <h3>Present</h3>
+                <p>After having travelled alone through Europe I returned home to Florida. I built up a portfolio that I feel shows off my capabilties well, and I am now planning on reuniting with my classmate(s) from Global U and setting off for Asia early this year, with the intention of eventually getting my foot in the door with Japan. In order to do this I need to get a job that will allow me to work remotely.</p>
+              </div>
+            </div>
         </div>
       </div>
     );
